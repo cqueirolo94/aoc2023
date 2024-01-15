@@ -64,7 +64,7 @@ func main() {
 	d3.Challenge2()
 
 	// DAY 4
-	d4 := days.NewDay4(TEST_INPUT)
+	d4 := days.NewDay4(DAY_4_INPUT)
 	d4.Challenge1()
 	d4.Challenge2()
 }
