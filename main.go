@@ -6,14 +6,44 @@ import (
 )
 
 const (
+	TEST_INPUT  = "./inputs/test.txt"
 	DAY_1_INPUT = "./inputs/day1.txt"
 	DAY_2_INPUT = "./inputs/day2.txt"
+	DAY_3_INPUT = "./inputs/day3.txt"
 )
 
 type DayChallenge interface {
 	Challenge1()
 	Challenge2()
 }
+
+/*
+EXAMPLE
+
+type DayN struct {
+	lines []string
+}
+
+func NewDayN(input string) *DayN {
+	return &DayN{
+		lines: read_file(input),
+	}
+}
+
+func (d *DayN) Challenge1() {
+	fmt.Println("Day N - Challenge 1")
+	total := 0
+
+	fmt.Printf("number: %d\n", total)
+}
+
+func (d *DayN) Challenge2() {
+	fmt.Println("Day N - Challenge 2")
+	total := 0
+
+	fmt.Printf("number: %d\n", total)
+}
+*/
 
 func main() {
 	fmt.Println("aoc 2023")
@@ -27,4 +57,8 @@ func main() {
 	d2.Challenge1()
 	d2.Challenge2()
 
+	// DAY 3
+	d3 := days.NewDay3(DAY_3_INPUT)
+	d3.Challenge1()
+	d3.Challenge2()
 }
