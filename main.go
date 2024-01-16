@@ -11,6 +11,7 @@ const (
 	DAY_2_INPUT = "./inputs/day2.txt"
 	DAY_3_INPUT = "./inputs/day3.txt"
 	DAY_4_INPUT = "./inputs/day4.txt"
+	DAY_5_INPUT = "./inputs/day5.txt"
 )
 
 type DayChallenge interface {
@@ -67,4 +68,9 @@ func main() {
 	d4 := days.NewDay4(DAY_4_INPUT)
 	d4.Challenge1()
 	d4.Challenge2()
+
+	// DAY 5
+	d5 := days.NewDay5(TEST_INPUT)
+	d5.Challenge1()
+	d5.Challenge2()
 }
